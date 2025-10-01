@@ -1,0 +1,129 @@
+﻿@model IEnumerable<ChatApp.Models.User>
+
+@{
+    ViewData["Title"] = "Chọn người để chat";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .user-list {
+            padding: 20px;
+        }
+
+        .user-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .user-item:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .user-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        .user-info {
+            flex: 1;
+        }
+
+        .user-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .user-email {
+            color: #6c757d;
+            font-size: 14px;
+        }
+
+        .instruction {
+            text-align: center;
+            padding: 20px;
+            color: #6c757d;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💬 Chat Application</h1>
+            <p>Chọn người dùng để bắt đầu trò chuyện</p>
+        </div>
+
+        <div class="instruction">
+            <p>Bạn đang đăng nhập với tư cách User ID: 1 (Alice). Click vào user bên dưới để chat.</p>
+        </div>
+
+        <div class="user-list">
+            @foreach (var user in Model)
+            {
+                @if (user.Id != 1) // Không hiển thị chính mình
+                {
+                    <a href="@Url.Action("Chat", "Chat", new { senderId = 1, receiverId = user.Id })" class="user-item">
+                        <div class="user-avatar">@user.Username.Substring(0, 1).ToUpper()</div>
+                        <div class="user-info">
+                            <div class="user-name">@user.Username</div>
+                            <div class="user-email">@user.Email</div>
+                        </div>
+                    </a>
+                }
+            }
+        </div>
+    </div>
+</body>
+</html>
