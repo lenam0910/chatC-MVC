@@ -261,13 +261,11 @@
         // Dùng origin để tránh lệch basePath sau Ingress
         const base = window.location.origin;
 
-        // Ưu tiên WebSockets; vẫn cho phép fallback nếu WS bị chặn (không đặt skipNegotiation)
-        const connection = new signalR.HubConnectionBuilder()
-          .withUrl(`${base}/chatHub`, {
-            transport: signalR.HttpTransportType.WebSockets
-          })
-          .withAutomaticReconnect()
-          .build();
+              const connection = new signalR.HubConnectionBuilder()
+        .withUrl(`${base}/chatHub`) // bỏ 'transport'
+        .withAutomaticReconnect()
+        .build();
+
 
         // Keep-alive (server <-> client) để tránh proxy cắt sớm
         connection.serverTimeoutInMilliseconds = 60000;      // 60s

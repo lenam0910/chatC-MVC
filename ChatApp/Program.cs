@@ -5,6 +5,22 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowApp", policy =>
+    {
+        policy.WithOrigins(
+                "https://prn-chat.lxhn.vn", // nếu frontend cùng host thì CORS không cần; nhưng cứ để rõ ràng
+                "https://frontend.example.com", // ví dụ: SPA ở domain khác
+                "http://localhost:5173"        // ví dụ: local dev
+            )
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials(); // cần cho cookie/Auth + SignalR
+    });
+});
+
+
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
