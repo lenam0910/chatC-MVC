@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\THIS PC\\Desktop\\ChatApp\\ChatApp\\ChatApp.csproj": {}
+    "C:\\Users\\ADMIN\\Desktop\\PRN222\\chatC-MVC\\ChatApp\\ChatApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\THIS PC\\Desktop\\ChatApp\\ChatApp\\ChatApp.csproj": {
+    "C:\\Users\\ADMIN\\Desktop\\PRN222\\chatC-MVC\\ChatApp\\ChatApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\THIS PC\\Desktop\\ChatApp\\ChatApp\\ChatApp.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\PRN222\\chatC-MVC\\ChatApp\\ChatApp.csproj",
         "projectName": "ChatApp",
-        "projectPath": "C:\\Users\\THIS PC\\Desktop\\ChatApp\\ChatApp\\ChatApp.csproj",
-        "packagesPath": "C:\\Users\\THIS PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\THIS PC\\Desktop\\ChatApp\\ChatApp\\obj\\",
+        "projectPath": "C:\\Users\\ADMIN\\Desktop\\PRN222\\chatC-MVC\\ChatApp\\ChatApp.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ADMIN\\Desktop\\PRN222\\chatC-MVC\\ChatApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\THIS PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
