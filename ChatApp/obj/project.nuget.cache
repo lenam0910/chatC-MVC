@@ -7,6 +7,8 @@
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.signalr\\1.2.0\\microsoft.aspnetcore.signalr.1.2.0.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.signalr.stackexchangeredis\\8.0.20\\microsoft.aspnetcore.signalr.stackexchangeredis.8.0.20.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.build.locator\\1.7.8\\microsoft.build.locator.1.7.8.nupkg.sha512",
@@ -88,10 +90,10 @@
     {
       "code": "NU1100",
       "level": "Error",
-      "message": "Unable to resolve 'Microsoft.AspNetCore.SignalR (>= 1.2.0)' for 'net8.0'. PackageSourceMapping is enabled, the following source(s) were not considered: Microsoft Visual Studio Offline Packages, nuget.org.",
+      "message": "Unable to resolve 'Microsoft.AspNetCore.WebSockets (>= 2.3.0)' for 'net8.0'. PackageSourceMapping is enabled, the following source(s) were not considered: Microsoft Visual Studio Offline Packages, nuget.org.",
       "projectPath": "C:\\Users\\ADMIN\\Desktop\\PRN222\\chatC-MVC\\ChatApp\\ChatApp.csproj",
       "filePath": "C:\\Users\\ADMIN\\Desktop\\PRN222\\chatC-MVC\\ChatApp\\ChatApp.csproj",
-      "libraryId": "Microsoft.AspNetCore.SignalR",
+      "libraryId": "Microsoft.AspNetCore.WebSockets",
       "targetGraphs": [
         "net8.0"
       ]
@@ -99,10 +101,43 @@
     {
       "code": "NU1100",
       "level": "Error",
-      "message": "Unable to resolve 'Microsoft.AspNetCore.SignalR.StackExchangeRedis (>= 8.0.20)' for 'net8.0'. PackageSourceMapping is enabled, the following source(s) were not considered: Microsoft Visual Studio Offline Packages, nuget.org.",
+      "message": "Unable to resolve 'Microsoft.AspNetCore.Http.Connections (>= 1.2.0)' for 'net8.0'. PackageSourceMapping is enabled, the following source(s) were not considered: Microsoft Visual Studio Offline Packages, nuget.org.",
       "projectPath": "C:\\Users\\ADMIN\\Desktop\\PRN222\\chatC-MVC\\ChatApp\\ChatApp.csproj",
       "filePath": "C:\\Users\\ADMIN\\Desktop\\PRN222\\chatC-MVC\\ChatApp\\ChatApp.csproj",
-      "libraryId": "Microsoft.AspNetCore.SignalR.StackExchangeRedis",
+      "libraryId": "Microsoft.AspNetCore.Http.Connections",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.AspNetCore.SignalR.Core (>= 1.2.0)' for 'net8.0'. PackageSourceMapping is enabled, the following source(s) were not considered: Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\ADMIN\\Desktop\\PRN222\\chatC-MVC\\ChatApp\\ChatApp.csproj",
+      "filePath": "C:\\Users\\ADMIN\\Desktop\\PRN222\\chatC-MVC\\ChatApp\\ChatApp.csproj",
+      "libraryId": "Microsoft.AspNetCore.SignalR.Core",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'MessagePack (>= 2.5.187)' for 'net8.0'. PackageSourceMapping is enabled, the following source(s) were not considered: Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\ADMIN\\Desktop\\PRN222\\chatC-MVC\\ChatApp\\ChatApp.csproj",
+      "filePath": "C:\\Users\\ADMIN\\Desktop\\PRN222\\chatC-MVC\\ChatApp\\ChatApp.csproj",
+      "libraryId": "MessagePack",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'StackExchange.Redis (>= 2.7.27)' for 'net8.0'. PackageSourceMapping is enabled, the following source(s) were not considered: Microsoft Visual Studio Offline Packages, nuget.org.",
+      "projectPath": "C:\\Users\\ADMIN\\Desktop\\PRN222\\chatC-MVC\\ChatApp\\ChatApp.csproj",
+      "filePath": "C:\\Users\\ADMIN\\Desktop\\PRN222\\chatC-MVC\\ChatApp\\ChatApp.csproj",
+      "libraryId": "StackExchange.Redis",
       "targetGraphs": [
         "net8.0"
       ]

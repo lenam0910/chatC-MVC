@@ -258,11 +258,10 @@
         const senderName = "@senderName";
         const receiverName = "@receiverName";
 
-        // Dùng origin để tránh lệch basePath sau Ingress
         const base = window.location.origin;
 
               const connection = new signalR.HubConnectionBuilder()
-        .withUrl(`${base}/chatHub`) // bỏ 'transport'
+        .withUrl(`${base}/chatHub`) 
         .withAutomaticReconnect()
         .build();
 
