@@ -13,11 +13,13 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services
-    .AddSignalR()
-    .AddStackExchangeRedis(
-        builder.Configuration.GetConnectionString("Redis"),
-        o => o.Configuration.ChannelPrefix = "prnchat");
+//builder.Services
+//    .AddSignalR()
+//    .AddStackExchangeRedis(
+//        builder.Configuration.GetConnectionString("Redis"),
+//        o => o.Configuration.ChannelPrefix = "prnchat");
+
+builder.Services.AddSignalR().AddStackExchangeRedis("172.20.10.11:31340,password=Group1se1888");
 
 var app = builder.Build();
 
